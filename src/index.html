@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>VueJs search filter and facet</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="main.js" type="module"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"
+    ></script>
+  </head>
+  <body class="bg-grey-lighter">
+    <main>
+      <app-header bg-color="#c5cae2"></app-header>
+
+      <div class="container mx-auto" id="app">
+        <div class="flex w-3/4 mx-auto my-6">
+          <input
+            type="search"
+            v-model="searchQuery"
+            name=""
+            id=""
+            class="rounded p-2 w-full bg-grey-light border-grey-light focus:bg-white border border-solid focus:border-indigo-light text-blue-darkest"
+            placeholder="Enter a search here!"
+          />
+        </div>
+        <div class="flex w-3/4 mx-auto text-indigo-darkest">
+          <div class="w-1/4 mr-4">
+            <div class="bg-white p-4 border border-solid border-grey-light">
+              <p class="text-lg border-b pb-2 mb-2">Filter by:</p>
+              <buttoncounter
+                :items="characters"
+                category="Character"
+              ></buttoncounter>
+            </div>
+            <!-- .dsadsadsadsadsds-->
+          </div>
+          <div class="w-3/4">
+            <p
+              class="mb-2 text-right"
+              v-if="searchQuery && filterPosts.length > 1 "
+            >
+              {{filterPosts.length}} results
+            </p>
+            <ul
+              class="list-reset bg-white p-4 border border-solid border-grey-light"
+            >
+              <li v-if="!searchQuery">
+                <h2 class="text-indigo-darker pb-2 text-xl">Search</h2>
+                <p class="text-black">Please use the search above</p>
+              </li>
+              <li
+                v-for="post in filterPosts"
+                v-else
+                :key="post.id"
+                class="mb-6"
+              >
+                <h2 class="text-indigo-darker pb-2 text-xl">{{post.title}}</h2>
+                <p class="pb-2 text-black">{{post.body}}</p>
+                <p class="text-sm text-grey-darker">
+                  Posted by: User {{post.userId}}
+                </p>
+              </li>
+              <li v-if="filterPosts.length == 0">
+                <h2 class="text-indigo-darker pb-2 text-xl">Sorry</h2>
+                <p class="text-black">
+                  There seem to be no posts under your criteria
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- .bg-blue-lightest -->
+  </body>
+</html>
