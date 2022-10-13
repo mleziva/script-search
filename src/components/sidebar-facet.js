@@ -4,10 +4,7 @@ export default {
   data() {
     return {
       facet: [],
-      facetItems: [
-        { character: 'jerry', count: 2 },
-        { character: 'george', count: 3 },
-      ],
+      facetItems: [],
       results: searchResultsStore.results,
     }
   },
@@ -31,18 +28,24 @@ export default {
         searchResultsStore.removeFilter()
       }
     },
-    getResults() {
-      console.log('test')
+    searchResultsStoreResults() {
       //when search results change, update facet numbers
       this.facetItems = searchResultsStore.getFacets(this.categoryProperty)
+    },
+    searchResultsStoreQuery() {
+      //when thequery changes, deselect the facet
+      this.facet = []
     },
   },
   computed: {
     categoryProperty() {
       return this.category.toLowerCase()
     },
-    getResults() {
+    searchResultsStoreResults() {
       return searchResultsStore.results
+    },
+    searchResultsStoreQuery() {
+      return searchResultsStore.query
     },
   },
   mounted() {

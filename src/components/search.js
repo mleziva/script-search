@@ -4,7 +4,6 @@ export default {
   data() {
     return {
       searchQuery: null,
-      message: '',
     }
   },
   computed: {
@@ -14,15 +13,23 @@ export default {
   },
   watch: {
     searchQuery() {
-      console.log('test1')
       searchResultsStore.executeSearch(this.searchQuery)
+    },
+  },
+  methods: {
+    debounceSearch(event) {
+      this.searchQuery = null
+      clearTimeout(this.debounce)
+      this.debounce = setTimeout(() => {
+        this.searchQuery = event.target.value
+      }, 600)
     },
   },
   template: `
   <div class="w-3/4 mx-auto my-6">
         <input
         type="search"
-        v-model="searchQuery"
+        @input="debounceSearch"
         name=""
         id=""
         class="rounded p-2 w-full bg-grey-light border-grey-light focus:bg-white border border-solid focus:border-indigo-light text-blue-darkest block"

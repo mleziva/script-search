@@ -4,12 +4,12 @@ import DataService from '../common/loadData.js'
 export const searchResultsStore = reactive({
   results: {},
   query: null,
+  filterApplied: false,
   filterResults(propertyName, filterValue) {
-    const filtered = Object.values(this.results).filter(
+    this.results = Object.values(this.results).filter(
       (key) => key.doc[propertyName] === filterValue,
     )
-    console.log(filtered)
-    this.results = filtered
+    this.filterApplied = true
   },
   getFacets(propertyName) {
     //get number of each occurrence of property and return as list of objects
@@ -34,10 +34,14 @@ export const searchResultsStore = reactive({
     return facetResults
   },
   removeFilter() {
-    this.results = DataService.query(this.query)
+    if (this.filterApplied) {
+      this.filterApplied = false
+      this.results = DataService.query(this.query)
+    }
   },
   executeSearch(query) {
-    this.query = query
+    this.filterApplied = false
     this.results = DataService.query(query)
+    this.query = query
   },
 })
