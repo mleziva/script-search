@@ -14,10 +14,11 @@ const DataService = {
     return data
   },
 
-  filter() {
-    Vue.axios.defaults.headers.common[
-      'Authorization'
-    ] = `Token ${JwtService.getToken()}`
+  //I think these should be moved to the store since that is what will have to be changed to update the view
+
+  filter(propertyName, filterValue) {
+    //get that property from the
+    //on filter added, run
   },
 
   query(searchQuery) {

@@ -1,17 +1,8 @@
-import { searchResultsStore, store } from '../stores/searchResultsStore.js'
+import { searchResultsStore } from '../stores/searchResultsStore.js'
 
 export default {
   name: 'SearchResults',
-  props: {
-    searchResults: {
-      type: Object,
-    },
-  },
-  methods: {
-    displayResults(searchResults) {
-      this.searchResults = searchResults
-    },
-  },
+  props: {},
   computed: {
     getResults() {
       return searchResultsStore.results
@@ -21,10 +12,8 @@ export default {
     console.log('mounted serach results')
   },
   template: `
-  <p>store.count</p>
     <li
     v-for="result in getResults"
-    v-else
     :key="result.doc.id"
     class="mb-6"
     >

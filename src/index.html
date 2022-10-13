@@ -50,18 +50,6 @@
 
               <app-search-results />
 
-              <li
-                v-for="post in filterPosts"
-                v-else
-                :key="post.id"
-                class="mb-6"
-              >
-                <h2 class="text-indigo-darker pb-2 text-xl">{{post.title}}</h2>
-                <p class="pb-2 text-black">{{post.body}}</p>
-                <p class="text-sm text-grey-darker">
-                  Posted by: User {{post.userId}}
-                </p>
-              </li>
               <li v-if="filterPosts.length == 0">
                 <h2 class="text-indigo-darker pb-2 text-xl">Sorry</h2>
                 <p class="text-black">

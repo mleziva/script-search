@@ -1,11 +1,6 @@
-import DataService from '../common/loadData.js'
-import SearchResults from './search-results.js'
 import { searchResultsStore } from '../stores/searchResultsStore.js'
 export default {
   name: 'Search',
-  components: {
-    SearchResults,
-  },
   data() {
     return {
       searchQuery: null,
@@ -14,9 +9,13 @@ export default {
   },
   computed: {
     searchResults() {
-      var results = DataService.query(this.searchQuery)
-      searchResultsStore.results = results
-      return results
+      return searchResultsStore.results
+    },
+  },
+  watch: {
+    searchQuery() {
+      console.log('test1')
+      searchResultsStore.executeSearch(this.searchQuery)
     },
   },
   template: `
@@ -30,7 +29,7 @@ export default {
         placeholder="Enter a search here!"
         />
     <div class="block" >
-        <span v-if="searchQuery && searchResults.length > 1 ">{{searchResults.length}} results</span/>
+        <span v-if="searchQuery && searchResults.length > 0 ">{{searchResults.length}} results</span>
         <span v-else> Try searching for something like "These Pretzels are making me thirsty" </span>
     </div>
 </div>
