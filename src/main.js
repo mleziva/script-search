@@ -1,11 +1,13 @@
-import ButtonCounter from '/src/components/ButtonCounter.js'
-import Header from '/src/components/header/header.js'
 import DataService, { FacetService } from '/src/common/loadData.js'
+
+import SidebarFacet from '/src/components/sidebar-facet.js'
+import Header from '/src/components/header/header.js'
+import Search from '/src/components/search.js'
+import SearchResults from '/src/components/search-results.js'
+import { createApp } from 'vue'
 
 await DataService.init()
 
-const { createApp } = Vue
-// console.log(charactersResultsObject)
 const App = createApp({
   data() {
     return {
@@ -19,8 +21,10 @@ const App = createApp({
     }
   },
   components: {
-    buttoncounter: ButtonCounter,
+    'sidebar-facet': SidebarFacet,
     'app-header': Header,
+    'app-search': Search,
+    'app-search-results': SearchResults,
   },
   methods: {
     fetchposts() {

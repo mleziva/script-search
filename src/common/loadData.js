@@ -1,11 +1,16 @@
+import { createIndex } from '../common/lunrindex.js'
+
+const elasticlunr = window.elasticlunr
 const dataSource = '/src/data/scriptarrayseason1.json'
-let data
+
+let data, loadedIndex
 let facets = {}
 
 const DataService = {
   async init() {
     const res = await fetch(dataSource)
     data = await res.json()
+    loadIndex(data)
     return data
   },
 
@@ -15,10 +20,12 @@ const DataService = {
     ] = `Token ${JwtService.getToken()}`
   },
 
-  query(resource, params) {
-    return Vue.axios.get(resource, params).catch((error) => {
-      throw new Error(`[RWV] ApiService ${error}`)
+  query(searchQuery) {
+    let results = loadedIndex.search(searchQuery, {
+      bool: 'OR',
+      expand: true,
     })
+    return results
   },
 }
 
@@ -27,14 +34,14 @@ export default DataService
 export const FacetService = {
   loadCharacters() {
     console.log('load characters called')
-    return GetAllCharacterCounts()
+    return getAllCharacterCounts()
   },
   remove(slug) {
     return ApiService.delete(`articles/${slug}/favorite`)
   },
 }
 
-function GetAllCharacterCounts() {
+function getAllCharacterCounts() {
   var lookup = {}
   var items = data
   var characterResult = []
@@ -65,4 +72,9 @@ function GetAllCharacterCounts() {
 
   facets.characters = sorted
   return sorted
+}
+
+function loadIndex(index) {
+  var rawIndex = createIndex(index)
+  loadedIndex = elasticlunr.Index.load(rawIndex)
 }
