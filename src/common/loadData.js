@@ -1,8 +1,8 @@
 import { createIndex } from '../common/lunrindex.js'
 
 const elasticlunr = window.elasticlunr
-// const dataSource = '/src/data/scriptarrayseason1.json'
-const dataSource = '/src/data/scriptarray.json'
+const dataSource = '/src/data/scriptarrayseason1.json'
+//const dataSource = '/src/data/scriptarray.json'
 
 let data, loadedIndex
 let facets = {}

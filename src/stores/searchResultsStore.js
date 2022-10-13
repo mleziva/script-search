@@ -31,6 +31,12 @@ export const searchResultsStore = reactive({
         })
       }
     })
+    //sort by size and take the top 10
+    facetResults = facetResults
+      .sort((a, b) => (a.count > b.count ? 1 : b.count > a.count ? -1 : 0))
+      .reverse()
+      .slice(0, 10)
+    console.log(facetResults)
     return facetResults
   },
   removeFilter() {

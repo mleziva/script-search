@@ -40,23 +40,7 @@
             </div>
           </div>
           <div class="w-3/4">
-            <ul
-              class="list-reset bg-white p-4 border border-solid border-grey-light"
-            >
-              <li v-if="!searchQuery">
-                <h2 class="text-indigo-darker pb-2 text-xl">Search</h2>
-                <p class="text-black">Please use the search above</p>
-              </li>
-
-              <app-search-results />
-
-              <li v-if="filterPosts.length == 0">
-                <h2 class="text-indigo-darker pb-2 text-xl">Sorry</h2>
-                <p class="text-black">
-                  There seem to be no posts under your criteria
-                </p>
-              </li>
-            </ul>
+            <app-search-results />
           </div>
         </div>
       </div>
