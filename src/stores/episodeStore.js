@@ -5,9 +5,8 @@ export const episodeStore = reactive({
   episode: {},
   episodeTitle: null,
   seid: null,
+  //this won't need to be a store, maybe move to a service?
   getEpisodeBySeid(seid) {
-    this.seid = seid
-    this.episode = EpisodeService.getEpisodeBySeid(seid)
-    return this.episode
+    return EpisodeService.getEpisodeBySeid(seid)
   },
 })

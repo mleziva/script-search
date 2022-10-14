@@ -44,6 +44,12 @@ export default {
     hasPreviousPage() {
       return this.indexStart > 0
     },
+    smallerOfIndexEndOrResultsCount() {
+      if (this.indexEnd < this.resultsCount) {
+        return this.indexEnd
+      }
+      return this.resultsCount
+    },
   },
   methods: {
     getEpisodeTitle(seid) {
@@ -61,7 +67,7 @@ export default {
   template: `
   <div v-if="resultsCount > 0 ">
     <div class="block" >
-          <span >{{indexStart}} - {{indexEnd}} of {{resultsCount}} results</span>
+          <span >{{indexStart}} - {{smallerOfIndexEndOrResultsCount}} of {{resultsCount}} results</span>
 
     </div>
     <ul class="list-reset bg-white p-4 border border-solid border-grey-light">

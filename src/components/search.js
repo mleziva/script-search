@@ -20,8 +20,10 @@ export default {
     debounceSearch(event) {
       this.searchQuery = null
       clearTimeout(this.debounce)
+      document.getElementById('loading').style.display = 'inline-block'
       this.debounce = setTimeout(() => {
         this.searchQuery = event.target.value
+        document.getElementById('loading').style.display = 'none'
       }, 600)
     },
   },
