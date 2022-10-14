@@ -20,7 +20,7 @@ export default {
       return searchResultsStore.results
     },
     imageSource() {
-      return 'img/' + this.characterImage
+      return '/src/img/' + this.characterImage
     },
   },
   methods: {
@@ -31,7 +31,7 @@ export default {
       this.debounce = setTimeout(() => {
         this.searchQuery = event.target.value
         document.getElementById('loading').style.display = 'none'
-      }, 600)
+      }, 500)
     },
   },
   template: `
