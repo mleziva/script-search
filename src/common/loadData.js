@@ -1,4 +1,4 @@
-import { createIndex } from '../common/lunrindex.js'
+import { createIndex } from './lunrIndex.js'
 
 const elasticlunr = window.elasticlunr
 const dataSource = '/src/data/scriptarrayseason1.json'

@@ -1,0 +1,1261 @@
+[
+{
+  "id" : "1",
+  "seid" : "S01E01",
+  "episodeNumber" : "1",
+  "airDate" : "5-Jul-89",
+  "title" : "Good News, Bad News"
+},
+{
+  "id" : "2",
+  "seid" : "S01E02",
+  "episodeNumber" : "2",
+  "airDate" : "31-May-90",
+  "title" : "The Stakeout"
+},
+{
+  "id" : "3",
+  "seid" : "S01E03",
+  "episodeNumber" : "3",
+  "airDate" : "7-Jun-90",
+  "title" : "The Robbery"
+},
+{
+  "id" : "4",
+  "seid" : "S01E04",
+  "episodeNumber" : "4",
+  "airDate" : "14-Jun-90",
+  "title" : "Male Unbonding"
+},
+{
+  "id" : "5",
+  "seid" : "S01E05",
+  "episodeNumber" : "5",
+  "airDate" : "21-Jun-90",
+  "title" : "The Stock Tip"
+},
+{
+  "id" : "6",
+  "seid" : "S02E01",
+  "episodeNumber" : "1",
+  "airDate" : "23-Jan-91",
+  "title" : "The Ex-Girlfriend"
+},
+{
+  "id" : "7",
+  "seid" : "S02E02",
+  "episodeNumber" : "2",
+  "airDate" : "30-Jan-91",
+  "title" : "The Pony Remark"
+},
+{
+  "id" : "8",
+  "seid" : "S02E03",
+  "episodeNumber" : "3",
+  "airDate" : "6-Feb-91",
+  "title" : "The Jacket"
+},
+{
+  "id" : "9",
+  "seid" : "S02E04",
+  "episodeNumber" : "4",
+  "airDate" : "13-Feb-91",
+  "title" : "The Phone Message"
+},
+{
+  "id" : "10",
+  "seid" : "S02E05",
+  "episodeNumber" : "5",
+  "airDate" : "4-Apr-91",
+  "title" : "The Apartment"
+},
+{
+  "id" : "11",
+  "seid" : "S02E06",
+  "episodeNumber" : "6",
+  "airDate" : "11-Apr-91",
+  "title" : "The Statue"
+},
+{
+  "id" : "12",
+  "seid" : "S02E07",
+  "episodeNumber" : "7",
+  "airDate" : "18-Apr-91",
+  "title" : "The Revenge"
+},
+{
+  "id" : "13",
+  "seid" : "S02E08",
+  "episodeNumber" : "8",
+  "airDate" : "25-Apr-91",
+  "title" : "The Heart Attack"
+},
+{
+  "id" : "14",
+  "seid" : "S02E09",
+  "episodeNumber" : "9",
+  "airDate" : "2-May-91",
+  "title" : "The Deal"
+},
+{
+  "id" : "15",
+  "seid" : "S02E10",
+  "episodeNumber" : "10",
+  "airDate" : "16-May-91",
+  "title" : "The Baby Shower"
+},
+{
+  "id" : "16",
+  "seid" : "S02E11",
+  "episodeNumber" : "11",
+  "airDate" : "23-May-91",
+  "title" : "The Chinese Restaurant"
+},
+{
+  "id" : "17",
+  "seid" : "S02E12",
+  "episodeNumber" : "12",
+  "airDate" : "26-Jun-91",
+  "title" : "The Busboy"
+},
+{
+  "id" : "18",
+  "seid" : "S03E01",
+  "episodeNumber" : "1",
+  "airDate" : "18-Sep-91",
+  "title" : "The Note"
+},
+{
+  "id" : "19",
+  "seid" : "S03E02",
+  "episodeNumber" : "2",
+  "airDate" : "25-Sep-91",
+  "title" : "The Truth"
+},
+{
+  "id" : "20",
+  "seid" : "S03E03",
+  "episodeNumber" : "3",
+  "airDate" : "2-Oct-91",
+  "title" : "The Pen"
+},
+{
+  "id" : "21",
+  "seid" : "S03E04",
+  "episodeNumber" : "4",
+  "airDate" : "9-Oct-91",
+  "title" : "The Dog"
+},
+{
+  "id" : "22",
+  "seid" : "S03E05",
+  "episodeNumber" : "5",
+  "airDate" : "16-Oct-91",
+  "title" : "The Library"
+},
+{
+  "id" : "23",
+  "seid" : "S03E06",
+  "episodeNumber" : "6",
+  "airDate" : "30-Oct-91",
+  "title" : "The Parking Garage"
+},
+{
+  "id" : "24",
+  "seid" : "S03E07",
+  "episodeNumber" : "7",
+  "airDate" : "6-Nov-91",
+  "title" : "The Cafe"
+},
+{
+  "id" : "25",
+  "seid" : "S03E08",
+  "episodeNumber" : "8",
+  "airDate" : "13-Nov-91",
+  "title" : "The Tape"
+},
+{
+  "id" : "26",
+  "seid" : "S03E09",
+  "episodeNumber" : "9",
+  "airDate" : "20-Nov-91",
+  "title" : "The Nose Job"
+},
+{
+  "id" : "27",
+  "seid" : "S03E10",
+  "episodeNumber" : "10",
+  "airDate" : "27-Nov-91",
+  "title" : "The Stranded"
+},
+{
+  "id" : "28",
+  "seid" : "S03E11",
+  "episodeNumber" : "11",
+  "airDate" : "4-Dec-91",
+  "title" : "The Alternate Side"
+},
+{
+  "id" : "29",
+  "seid" : "S03E12",
+  "episodeNumber" : "12",
+  "airDate" : "11-Dec-91",
+  "title" : "The Red Dot"
+},
+{
+  "id" : "30",
+  "seid" : "S03E13",
+  "episodeNumber" : "13",
+  "airDate" : "8-Jan-92",
+  "title" : "The Subway"
+},
+{
+  "id" : "31",
+  "seid" : "S03E14",
+  "episodeNumber" : "14",
+  "airDate" : "15-Jan-92",
+  "title" : "The Pez Dispenser"
+},
+{
+  "id" : "32",
+  "seid" : "S03E15",
+  "episodeNumber" : "15",
+  "airDate" : "29-Jan-92",
+  "title" : "The Suicide"
+},
+{
+  "id" : "33",
+  "seid" : "S03E16",
+  "episodeNumber" : "16",
+  "airDate" : "5-Feb-92",
+  "title" : "The Fix-Up"
+},
+{
+  "id" : "34",
+  "seid" : "S03E17",
+  "episodeNumber" : "17",
+  "airDate" : "12-Feb-92",
+  "title" : "The Boyfriend (1)"
+},
+{
+  "id" : "35",
+  "seid" : "S03E18",
+  "episodeNumber" : "18",
+  "airDate" : "12-Feb-92",
+  "title" : "The Boyfriend (2)"
+},
+{
+  "id" : "36",
+  "seid" : "S03E19",
+  "episodeNumber" : "19",
+  "airDate" : "26-Feb-92",
+  "title" : "The Limo"
+},
+{
+  "id" : "37",
+  "seid" : "S03E20",
+  "episodeNumber" : "20",
+  "airDate" : "4-Mar-92",
+  "title" : "The Good Samaritan"
+},
+{
+  "id" : "38",
+  "seid" : "S03E21",
+  "episodeNumber" : "21",
+  "airDate" : "25-Mar-92",
+  "title" : "The Letter"
+},
+{
+  "id" : "39",
+  "seid" : "S03E22",
+  "episodeNumber" : "22",
+  "airDate" : "22-Apr-92",
+  "title" : "The Parking Space"
+},
+{
+  "id" : "40",
+  "seid" : "S03E23",
+  "episodeNumber" : "23",
+  "airDate" : "6-May-92",
+  "title" : "The Keys"
+},
+{
+  "id" : "41",
+  "seid" : "S04E01",
+  "episodeNumber" : "1",
+  "airDate" : "12-Aug-92",
+  "title" : "The Trip (1)"
+},
+{
+  "id" : "42",
+  "seid" : "S04E02",
+  "episodeNumber" : "2",
+  "airDate" : "19-Aug-92",
+  "title" : "The Trip (2)"
+},
+{
+  "id" : "43",
+  "seid" : "S04E03",
+  "episodeNumber" : "3",
+  "airDate" : "16-Sep-92",
+  "title" : "The Pitch"
+},
+{
+  "id" : "44",
+  "seid" : "S04E04",
+  "episodeNumber" : "4",
+  "airDate" : "16-Sep-92",
+  "title" : "The Ticket"
+},
+{
+  "id" : "45",
+  "seid" : "S04E05",
+  "episodeNumber" : "5",
+  "airDate" : "23-Sep-92",
+  "title" : "The Wallet (1)"
+},
+{
+  "id" : "46",
+  "seid" : "S04E06",
+  "episodeNumber" : "6",
+  "airDate" : "30-Sep-92",
+  "title" : "The Watch (2)"
+},
+{
+  "id" : "47",
+  "seid" : "S04E07",
+  "episodeNumber" : "7",
+  "airDate" : "7-Oct-92",
+  "title" : "The Bubble Boy"
+},
+{
+  "id" : "48",
+  "seid" : "S04E08",
+  "episodeNumber" : "8",
+  "airDate" : "28-Oct-92",
+  "title" : "The Cheever Letters"
+},
+{
+  "id" : "49",
+  "seid" : "S04E09",
+  "episodeNumber" : "9",
+  "airDate" : "4-Nov-92",
+  "title" : "The Opera"
+},
+{
+  "id" : "50",
+  "seid" : "S04E10",
+  "episodeNumber" : "10",
+  "airDate" : "11-Nov-92",
+  "title" : "The Virgin"
+},
+{
+  "id" : "51",
+  "seid" : "S04E11",
+  "episodeNumber" : "11",
+  "airDate" : "18-Nov-92",
+  "title" : "The Contest"
+},
+{
+  "id" : "52",
+  "seid" : "S04E12",
+  "episodeNumber" : "12",
+  "airDate" : "25-Nov-92",
+  "title" : "The Airport"
+},
+{
+  "id" : "53",
+  "seid" : "S04E13",
+  "episodeNumber" : "13",
+  "airDate" : "16-Dec-92",
+  "title" : "The Pick"
+},
+{
+  "id" : "54",
+  "seid" : "S04E14",
+  "episodeNumber" : "14",
+  "airDate" : "6-Jan-93",
+  "title" : "The Movie"
+},
+{
+  "id" : "55",
+  "seid" : "S04E15",
+  "episodeNumber" : "15",
+  "airDate" : "27-Jan-93",
+  "title" : "The Visa"
+},
+{
+  "id" : "56",
+  "seid" : "S04E16",
+  "episodeNumber" : "16",
+  "airDate" : "4-Feb-93",
+  "title" : "The Shoes"
+},
+{
+  "id" : "57",
+  "seid" : "S04E17",
+  "episodeNumber" : "17",
+  "airDate" : "11-Feb-93",
+  "title" : "The Outing"
+},
+{
+  "id" : "58",
+  "seid" : "S04E18",
+  "episodeNumber" : "18",
+  "airDate" : "18-Feb-93",
+  "title" : "The Old Man"
+},
+{
+  "id" : "59",
+  "seid" : "S04E19",
+  "episodeNumber" : "19",
+  "airDate" : "25-Feb-93",
+  "title" : "The Implant"
+},
+{
+  "id" : "60",
+  "seid" : "S04E20",
+  "episodeNumber" : "20",
+  "airDate" : "18-Mar-93",
+  "title" : "The Junior Mint"
+},
+{
+  "id" : "61",
+  "seid" : "S04E21",
+  "episodeNumber" : "21",
+  "airDate" : "15-Apr-93",
+  "title" : "The Smelly Car"
+},
+{
+  "id" : "62",
+  "seid" : "S04E22",
+  "episodeNumber" : "22",
+  "airDate" : "13-May-93",
+  "title" : "The Handicap Spot"
+},
+{
+  "id" : "63",
+  "seid" : "S04E23",
+  "episodeNumber" : "23",
+  "airDate" : "20-May-93",
+  "title" : "The Pilot (1)"
+},
+{
+  "id" : "64",
+  "seid" : "S04E24",
+  "episodeNumber" : "24",
+  "airDate" : "20-May-93",
+  "title" : "The Pilot (2)"
+},
+{
+  "id" : "65",
+  "seid" : "S05E01",
+  "episodeNumber" : "1",
+  "airDate" : "16-Sep-93",
+  "title" : "The Mango"
+},
+{
+  "id" : "66",
+  "seid" : "S05E02",
+  "episodeNumber" : "2",
+  "airDate" : "23-Sep-93",
+  "title" : "The Puffy Shirt"
+},
+{
+  "id" : "67",
+  "seid" : "S05E03",
+  "episodeNumber" : "3",
+  "airDate" : "30-Sep-93",
+  "title" : "The Glasses"
+},
+{
+  "id" : "68",
+  "seid" : "S05E04",
+  "episodeNumber" : "4",
+  "airDate" : "7-Oct-93",
+  "title" : "The Sniffing Accountant"
+},
+{
+  "id" : "69",
+  "seid" : "S05E05",
+  "episodeNumber" : "5",
+  "airDate" : "14-Oct-93",
+  "title" : "The Bris"
+},
+{
+  "id" : "70",
+  "seid" : "S05E06",
+  "episodeNumber" : "6",
+  "airDate" : "28-Oct-93",
+  "title" : "The Lip Reader"
+},
+{
+  "id" : "71",
+  "seid" : "S05E07",
+  "episodeNumber" : "7",
+  "airDate" : "4-Nov-93",
+  "title" : "The Non-Fat Yogurt"
+},
+{
+  "id" : "72",
+  "seid" : "S05E08",
+  "episodeNumber" : "8",
+  "airDate" : "11-Nov-93",
+  "title" : "The Barber"
+},
+{
+  "id" : "73",
+  "seid" : "S05E09",
+  "episodeNumber" : "9",
+  "airDate" : "18-Nov-93",
+  "title" : "The Masseuse"
+},
+{
+  "id" : "74",
+  "seid" : "S05E10",
+  "episodeNumber" : "10",
+  "airDate" : "9-Dec-93",
+  "title" : "The Cigar Store Indian"
+},
+{
+  "id" : "75",
+  "seid" : "S05E11",
+  "episodeNumber" : "11",
+  "airDate" : "16-Dec-93",
+  "title" : "The Conversion"
+},
+{
+  "id" : "76",
+  "seid" : "S05E12",
+  "episodeNumber" : "12",
+  "airDate" : "6-Jan-94",
+  "title" : "The Stall"
+},
+{
+  "id" : "77",
+  "seid" : "S05E13",
+  "episodeNumber" : "13",
+  "airDate" : "3-Feb-94",
+  "title" : "The Dinner Party"
+},
+{
+  "id" : "78",
+  "seid" : "S05E14",
+  "episodeNumber" : "14",
+  "airDate" : "10-Feb-94",
+  "title" : "The Marine Biologist"
+},
+{
+  "id" : "79",
+  "seid" : "S05E15",
+  "episodeNumber" : "15",
+  "airDate" : "17-Feb-94",
+  "title" : "The Pie"
+},
+{
+  "id" : "80",
+  "seid" : "S05E16",
+  "episodeNumber" : "16",
+  "airDate" : "24-Feb-94",
+  "title" : "The Stand-In"
+},
+{
+  "id" : "81",
+  "seid" : "S05E17",
+  "episodeNumber" : "17",
+  "airDate" : "17-Mar-94",
+  "title" : "The Wife"
+},
+{
+  "id" : "82",
+  "seid" : "S05E18",
+  "episodeNumber" : "18",
+  "airDate" : "28-Apr-94",
+  "title" : "The Raincoats (1)"
+},
+{
+  "id" : "83",
+  "seid" : "S05E19",
+  "episodeNumber" : "19",
+  "airDate" : "28-Apr-94",
+  "title" : "The Raincoats (2)"
+},
+{
+  "id" : "84",
+  "seid" : "S05E20",
+  "episodeNumber" : "20",
+  "airDate" : "5-May-94",
+  "title" : "The Fire"
+},
+{
+  "id" : "85",
+  "seid" : "S05E21",
+  "episodeNumber" : "21",
+  "airDate" : "12-May-94",
+  "title" : "The Hamptons"
+},
+{
+  "id" : "86",
+  "seid" : "S05E22",
+  "episodeNumber" : "22",
+  "airDate" : "19-May-94",
+  "title" : "The Opposite"
+},
+{
+  "id" : "87",
+  "seid" : "S06E01",
+  "episodeNumber" : "1",
+  "airDate" : "22-Sep-94",
+  "title" : "The Chaperone"
+},
+{
+  "id" : "88",
+  "seid" : "S06E02",
+  "episodeNumber" : "2",
+  "airDate" : "29-Sep-94",
+  "title" : "The Big Salad"
+},
+{
+  "id" : "89",
+  "seid" : "S06E03",
+  "episodeNumber" : "3",
+  "airDate" : "6-Oct-94",
+  "title" : "The Pledge Drive"
+},
+{
+  "id" : "90",
+  "seid" : "S06E04",
+  "episodeNumber" : "4",
+  "airDate" : "13-Oct-94",
+  "title" : "The Chinese Woman"
+},
+{
+  "id" : "91",
+  "seid" : "S06E05",
+  "episodeNumber" : "5",
+  "airDate" : "27-Oct-94",
+  "title" : "The Couch"
+},
+{
+  "id" : "92",
+  "seid" : "S06E06",
+  "episodeNumber" : "6",
+  "airDate" : "3-Nov-94",
+  "title" : "The Gymnast"
+},
+{
+  "id" : "93",
+  "seid" : "S06E07",
+  "episodeNumber" : "7",
+  "airDate" : "10-Nov-94",
+  "title" : "The Soup"
+},
+{
+  "id" : "94",
+  "seid" : "S06E08",
+  "episodeNumber" : "8",
+  "airDate" : "17-Nov-94",
+  "title" : "The Mom & Pop Store"
+},
+{
+  "id" : "95",
+  "seid" : "S06E09",
+  "episodeNumber" : "9",
+  "airDate" : "8-Dec-94",
+  "title" : "The Secretary"
+},
+{
+  "id" : "96",
+  "seid" : "S06E10",
+  "episodeNumber" : "10",
+  "airDate" : "15-Dec-94",
+  "title" : "The Race"
+},
+{
+  "id" : "97",
+  "seid" : "S06E11",
+  "episodeNumber" : "11",
+  "airDate" : "5-Jan-95",
+  "title" : "The Switch"
+},
+{
+  "id" : "98",
+  "seid" : "S06E12",
+  "episodeNumber" : "12",
+  "airDate" : "19-Jan-95",
+  "title" : "The Label Maker"
+},
+{
+  "id" : "99",
+  "seid" : "S06E13",
+  "episodeNumber" : "13",
+  "airDate" : "26-Jan-95",
+  "title" : "The Scofflaw"
+},
+{
+  "id" : "100",
+  "seid" : "S06E14",
+  "episodeNumber" : "14",
+  "airDate" : "2-Feb-95",
+  "title" : "Highlights of a Hundred (1)"
+},
+{
+  "id" : "101",
+  "seid" : "S06E15",
+  "episodeNumber" : "15",
+  "airDate" : "2-Feb-95",
+  "title" : "Highlights of a Hundred (2)"
+},
+{
+  "id" : "102",
+  "seid" : "S06E16",
+  "episodeNumber" : "16",
+  "airDate" : "9-Feb-95",
+  "title" : "The Beard"
+},
+{
+  "id" : "103",
+  "seid" : "S06E17",
+  "episodeNumber" : "17",
+  "airDate" : "16-Feb-95",
+  "title" : "The Kiss Hello"
+},
+{
+  "id" : "104",
+  "seid" : "S06E18",
+  "episodeNumber" : "18",
+  "airDate" : "23-Feb-95",
+  "title" : "The Doorman"
+},
+{
+  "id" : "105",
+  "seid" : "S06E19",
+  "episodeNumber" : "19",
+  "airDate" : "16-Mar-95",
+  "title" : "The Jimmy"
+},
+{
+  "id" : "106",
+  "seid" : "S06E20",
+  "episodeNumber" : "20",
+  "airDate" : "6-Apr-95",
+  "title" : "The Doodle"
+},
+{
+  "id" : "107",
+  "seid" : "S06E21",
+  "episodeNumber" : "21",
+  "airDate" : "27-Apr-95",
+  "title" : "The Fusilli Jerry"
+},
+{
+  "id" : "108",
+  "seid" : "S06E22",
+  "episodeNumber" : "22",
+  "airDate" : "4-May-95",
+  "title" : "The Diplomat's Club"
+},
+{
+  "id" : "109",
+  "seid" : "S06E23",
+  "episodeNumber" : "23",
+  "airDate" : "11-May-95",
+  "title" : "The Face Painter"
+},
+{
+  "id" : "110",
+  "seid" : "S06E24",
+  "episodeNumber" : "24",
+  "airDate" : "18-May-95",
+  "title" : "The Understudy"
+},
+{
+  "id" : "111",
+  "seid" : "S07E01",
+  "episodeNumber" : "1",
+  "airDate" : "21-Sep-95",
+  "title" : "The Engagement"
+},
+{
+  "id" : "112",
+  "seid" : "S07E02",
+  "episodeNumber" : "2",
+  "airDate" : "28-Sep-95",
+  "title" : "The Postponement"
+},
+{
+  "id" : "113",
+  "seid" : "S07E03",
+  "episodeNumber" : "3",
+  "airDate" : "5-Oct-95",
+  "title" : "The Maestro"
+},
+{
+  "id" : "114",
+  "seid" : "S07E04",
+  "episodeNumber" : "4",
+  "airDate" : "12-Oct-95",
+  "title" : "The Wink"
+},
+{
+  "id" : "115",
+  "seid" : "S07E05",
+  "episodeNumber" : "5",
+  "airDate" : "19-Oct-95",
+  "title" : "The Hot Tub"
+},
+{
+  "id" : "116",
+  "seid" : "S07E06",
+  "episodeNumber" : "6",
+  "airDate" : "2-Nov-95",
+  "title" : "The Soup Nazi"
+},
+{
+  "id" : "117",
+  "seid" : "S07E07",
+  "episodeNumber" : "7",
+  "airDate" : "9-Nov-95",
+  "title" : "The Secret Code"
+},
+{
+  "id" : "118",
+  "seid" : "S07E08",
+  "episodeNumber" : "8",
+  "airDate" : "16-Nov-95",
+  "title" : "The Pool Guy"
+},
+{
+  "id" : "119",
+  "seid" : "S07E09",
+  "episodeNumber" : "9",
+  "airDate" : "7-Dec-95",
+  "title" : "The Sponge"
+},
+{
+  "id" : "120",
+  "seid" : "S07E10",
+  "episodeNumber" : "10",
+  "airDate" : "14-Dec-95",
+  "title" : "The Gum"
+},
+{
+  "id" : "121",
+  "seid" : "S07E11",
+  "episodeNumber" : "11",
+  "airDate" : "4-Jan-96",
+  "title" : "The Rye"
+},
+{
+  "id" : "122",
+  "seid" : "S07E12",
+  "episodeNumber" : "12",
+  "airDate" : "25-Jan-96",
+  "title" : "The Caddy"
+},
+{
+  "id" : "123",
+  "seid" : "S07E13",
+  "episodeNumber" : "13",
+  "airDate" : "1-Feb-96",
+  "title" : "The Seven"
+},
+{
+  "id" : "124",
+  "seid" : "S07E14",
+  "episodeNumber" : "14",
+  "airDate" : "8-Feb-96",
+  "title" : "The Cadillac (1)"
+},
+{
+  "id" : "125",
+  "seid" : "S07E15",
+  "episodeNumber" : "15",
+  "airDate" : "8-Feb-96",
+  "title" : "The Cadillac (2)"
+},
+{
+  "id" : "126",
+  "seid" : "S07E16",
+  "episodeNumber" : "16",
+  "airDate" : "15-Feb-96",
+  "title" : "The Shower Head"
+},
+{
+  "id" : "127",
+  "seid" : "S07E17",
+  "episodeNumber" : "17",
+  "airDate" : "22-Feb-96",
+  "title" : "The Doll"
+},
+{
+  "id" : "128",
+  "seid" : "S07E18",
+  "episodeNumber" : "18",
+  "airDate" : "7-Mar-96",
+  "title" : "The Friars Club"
+},
+{
+  "id" : "129",
+  "seid" : "S07E19",
+  "episodeNumber" : "19",
+  "airDate" : "4-Apr-96",
+  "title" : "The Wig Master"
+},
+{
+  "id" : "130",
+  "seid" : "S07E20",
+  "episodeNumber" : "20",
+  "airDate" : "25-Apr-96",
+  "title" : "The Calzone"
+},
+{
+  "id" : "131",
+  "seid" : "S07E21",
+  "episodeNumber" : "21",
+  "airDate" : "2-May-96",
+  "title" : "The Bottle Deposit (1)"
+},
+{
+  "id" : "132",
+  "seid" : "S07E22",
+  "episodeNumber" : "22",
+  "airDate" : "2-May-96",
+  "title" : "The Bottle Deposit (2)"
+},
+{
+  "id" : "133",
+  "seid" : "S07E23",
+  "episodeNumber" : "23",
+  "airDate" : "9-May-96",
+  "title" : "The Wait Out"
+},
+{
+  "id" : "134",
+  "seid" : "S07E24",
+  "episodeNumber" : "24",
+  "airDate" : "16-May-96",
+  "title" : "The Invitations"
+},
+{
+  "id" : "135",
+  "seid" : "S08E01",
+  "episodeNumber" : "1",
+  "airDate" : "19-Sep-96",
+  "title" : "The Foundation"
+},
+{
+  "id" : "136",
+  "seid" : "S08E02",
+  "episodeNumber" : "2",
+  "airDate" : "26-Sep-96",
+  "title" : "The Soul Mate"
+},
+{
+  "id" : "137",
+  "seid" : "S08E03",
+  "episodeNumber" : "3",
+  "airDate" : "3-Oct-96",
+  "title" : "The Bizarro Jerry"
+},
+{
+  "id" : "138",
+  "seid" : "S08E04",
+  "episodeNumber" : "4",
+  "airDate" : "10-Oct-96",
+  "title" : "The Little Kicks"
+},
+{
+  "id" : "139",
+  "seid" : "S08E05",
+  "episodeNumber" : "5",
+  "airDate" : "17-Oct-96",
+  "title" : "The Package"
+},
+{
+  "id" : "140",
+  "seid" : "S08E06",
+  "episodeNumber" : "6",
+  "airDate" : "31-Oct-96",
+  "title" : "The Fatigues"
+},
+{
+  "id" : "141",
+  "seid" : "S08E07",
+  "episodeNumber" : "7",
+  "airDate" : "7-Nov-96",
+  "title" : "The Checks"
+},
+{
+  "id" : "142",
+  "seid" : "S08E08",
+  "episodeNumber" : "8",
+  "airDate" : "14-Nov-96",
+  "title" : "The Chicken Roaster"
+},
+{
+  "id" : "143",
+  "seid" : "S08E09",
+  "episodeNumber" : "9",
+  "airDate" : "21-Nov-96",
+  "title" : "The Abstinence"
+},
+{
+  "id" : "144",
+  "seid" : "S08E10",
+  "episodeNumber" : "10",
+  "airDate" : "19-Dec-96",
+  "title" : "The Andrea Doria"
+},
+{
+  "id" : "145",
+  "seid" : "S08E11",
+  "episodeNumber" : "11",
+  "airDate" : "9-Jan-97",
+  "title" : "The Little Jerry"
+},
+{
+  "id" : "146",
+  "seid" : "S08E12",
+  "episodeNumber" : "12",
+  "airDate" : "16-Jan-97",
+  "title" : "The Money"
+},
+{
+  "id" : "147",
+  "seid" : "S08E13",
+  "episodeNumber" : "13",
+  "airDate" : "30-Jan-97",
+  "title" : "The Comeback"
+},
+{
+  "id" : "148",
+  "seid" : "S08E14",
+  "episodeNumber" : "14",
+  "airDate" : "6-Feb-97",
+  "title" : "The Van Buren Boys"
+},
+{
+  "id" : "149",
+  "seid" : "S08E15",
+  "episodeNumber" : "15",
+  "airDate" : "13-Feb-97",
+  "title" : "The Susie"
+},
+{
+  "id" : "150",
+  "seid" : "S08E16",
+  "episodeNumber" : "16",
+  "airDate" : "20-Feb-97",
+  "title" : "The Pothole"
+},
+{
+  "id" : "151",
+  "seid" : "S08E17",
+  "episodeNumber" : "17",
+  "airDate" : "13-Mar-97",
+  "title" : "The English Patient"
+},
+{
+  "id" : "152",
+  "seid" : "S08E18",
+  "episodeNumber" : "18",
+  "airDate" : "10-Apr-97",
+  "title" : "The Nap"
+},
+{
+  "id" : "153",
+  "seid" : "S08E19",
+  "episodeNumber" : "19",
+  "airDate" : "24-Apr-97",
+  "title" : "The Yada Yada"
+},
+{
+  "id" : "154",
+  "seid" : "S08E20",
+  "episodeNumber" : "20",
+  "airDate" : "1-May-97",
+  "title" : "The Millennium"
+},
+{
+  "id" : "155",
+  "seid" : "S08E21",
+  "episodeNumber" : "21",
+  "airDate" : "8-May-97",
+  "title" : "The Muffin Tops"
+},
+{
+  "id" : "156",
+  "seid" : "S08E22",
+  "episodeNumber" : "22",
+  "airDate" : "15-May-97",
+  "title" : "The Summer of George"
+},
+{
+  "id" : "157",
+  "seid" : "S09E01",
+  "episodeNumber" : "1",
+  "airDate" : "25-Sep-97",
+  "title" : "The Butter Shave"
+},
+{
+  "id" : "158",
+  "seid" : "S09E02",
+  "episodeNumber" : "2",
+  "airDate" : "2-Oct-97",
+  "title" : "The Voice"
+},
+{
+  "id" : "159",
+  "seid" : "S09E03",
+  "episodeNumber" : "3",
+  "airDate" : "9-Oct-97",
+  "title" : "The Serenity Now"
+},
+{
+  "id" : "160",
+  "seid" : "S09E04",
+  "episodeNumber" : "4",
+  "airDate" : "16-Oct-97",
+  "title" : "The Blood"
+},
+{
+  "id" : "161",
+  "seid" : "S09E05",
+  "episodeNumber" : "5",
+  "airDate" : "30-Oct-97",
+  "title" : "The Junk Mail"
+},
+{
+  "id" : "162",
+  "seid" : "S09E06",
+  "episodeNumber" : "6",
+  "airDate" : "6-Nov-97",
+  "title" : "The Merv Griffin Show"
+},
+{
+  "id" : "163",
+  "seid" : "S09E07",
+  "episodeNumber" : "7",
+  "airDate" : "13-Nov-97",
+  "title" : "The Slicer"
+},
+{
+  "id" : "164",
+  "seid" : "S09E08",
+  "episodeNumber" : "8",
+  "airDate" : "20-Nov-97",
+  "title" : "The Betrayal"
+},
+{
+  "id" : "165",
+  "seid" : "S09E09",
+  "episodeNumber" : "9",
+  "airDate" : "11-Dec-97",
+  "title" : "The Apology"
+},
+{
+  "id" : "166",
+  "seid" : "S09E10",
+  "episodeNumber" : "10",
+  "airDate" : "18-Dec-97",
+  "title" : "The Strike"
+},
+{
+  "id" : "167",
+  "seid" : "S09E11",
+  "episodeNumber" : "11",
+  "airDate" : "8-Jan-98",
+  "title" : "The Dealership"
+},
+{
+  "id" : "168",
+  "seid" : "S09E12",
+  "episodeNumber" : "12",
+  "airDate" : "15-Jan-98",
+  "title" : "The Reverse Peephole"
+},
+{
+  "id" : "169",
+  "seid" : "S09E13",
+  "episodeNumber" : "13",
+  "airDate" : "29-Jan-98",
+  "title" : "The Cartoon"
+},
+{
+  "id" : "170",
+  "seid" : "S09E14",
+  "episodeNumber" : "14",
+  "airDate" : "5-Feb-98",
+  "title" : "The Strongbox"
+},
+{
+  "id" : "171",
+  "seid" : "S09E15",
+  "episodeNumber" : "15",
+  "airDate" : "26-Feb-98",
+  "title" : "The Wizard"
+},
+{
+  "id" : "172",
+  "seid" : "S09E16",
+  "episodeNumber" : "16",
+  "airDate" : "19-Mar-98",
+  "title" : "The Burning"
+},
+{
+  "id" : "173",
+  "seid" : "S09E17",
+  "episodeNumber" : "17",
+  "airDate" : "9-Apr-98",
+  "title" : "The Bookstore"
+},
+{
+  "id" : "174",
+  "seid" : "S09E18",
+  "episodeNumber" : "18",
+  "airDate" : "23-Apr-98",
+  "title" : "The Frogger"
+},
+{
+  "id" : "175",
+  "seid" : "S09E19",
+  "episodeNumber" : "19",
+  "airDate" : "30-Apr-98",
+  "title" : "The Maid"
+},
+{
+  "id" : "176",
+  "seid" : "S09E20",
+  "episodeNumber" : "20",
+  "airDate" : "7-May-98",
+  "title" : "The Puerto Rican Day"
+},
+{
+  "id" : "177",
+  "seid" : "S09E21",
+  "episodeNumber" : "21",
+  "airDate" : "14-May-98",
+  "title" : "The Clip Show (1) (a.k.a. The Chronicle (1))"
+},
+{
+  "id" : "178",
+  "seid" : "S09E22",
+  "episodeNumber" : "22",
+  "airDate" : "14-May-98",
+  "title" : "The Clip Show (2) (a.k.a. The Chronicle (2))"
+},
+{
+  "id" : "179",
+  "seid" : "S09E23",
+  "episodeNumber" : "23",
+  "airDate" : "14-May-98",
+  "title" : "The Finale (1)"
+},
+{
+  "id" : "180",
+  "seid" : "S09E24",
+  "episodeNumber" : "24",
+  "airDate" : "14-May-98",
+  "title" : "The Finale (2)"
+}]

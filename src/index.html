@@ -9,6 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link href="style.css" rel="stylesheet" />
     <script type="importmap">
       {
         "imports": {
@@ -22,11 +23,32 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"
     ></script>
+    <noscript>
+      <style>
+        #javascriptDisabled {
+          display: block;
+        }
+        #app {
+          display: none;
+        }
+      </style>
+    </noscript>
   </head>
   <body class="bg-grey-lighter">
     <main>
-      <app-header bg-color="#c5cae2"></app-header>
+      <app-header></app-header>
 
+      <div id="javascriptDisabled" style="display: none;">
+        <h2>JavaScript not enabled</h2>
+        <p>
+          Looks like you don't have javascript enabled or this site does not
+          work on your device.
+        </p>
+        <p>
+          If you are on a mobile device, try requesting in desktop mode. Sorry
+          for the inconvenience
+        </p>
+      </div>
       <div class="container mx-auto" id="app">
         <app-search></app-search>
         <div class="flex w-3/4 mx-auto text-indigo-darkest">
