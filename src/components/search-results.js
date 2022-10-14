@@ -1,4 +1,5 @@
 import { searchResultsStore } from '../stores/searchResultsStore.js'
+import { episodeStore } from '../stores/episodeStore.js'
 
 export default {
   name: 'SearchResults',
@@ -45,6 +46,9 @@ export default {
     },
   },
   methods: {
+    getEpisodeTitle(seid) {
+      return episodeStore.getEpisodeBySeid(seid).title
+    },
     prev() {
       window.scrollTo(0, 0)
       this.currentPage--
@@ -67,7 +71,7 @@ export default {
       class="mb-6"
       >
           <h2 class="text-indigo-darker pb-2 text-xl">Season: {{result.doc.season}}</h2>
-          <p class="pb-2 text-black">Episode Number: {{result.doc.episodeNumber}}</p>
+          <p class="pb-2 text-black">Episode: {{result.doc.episodeNumber}} - {{getEpisodeTitle(result.doc.seid)}}</p>
           <p class="text-sm text-grey-darker">
               Character: {{result.doc.character}}
           </p>

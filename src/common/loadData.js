@@ -2,9 +2,10 @@ import { createIndex } from './lunrIndex.js'
 
 const elasticlunr = window.elasticlunr
 const dataSource = '/src/data/scriptarrayseason1.json'
+const episodeDataSource = '/src/data/seinfeldEpisodes.json'
 //const dataSource = '/src/data/scriptarray.json'
 
-let data, loadedIndex
+let data, loadedIndex, episodeData
 let facets = {}
 
 const DataService = {
@@ -12,6 +13,7 @@ const DataService = {
     const res = await fetch(dataSource)
     data = await res.json()
     loadIndex(data)
+    loadEpisodes()
     return data
   },
 
@@ -40,6 +42,15 @@ export const FacetService = {
   },
   remove(slug) {
     return ApiService.delete(`articles/${slug}/favorite`)
+  },
+}
+export const EpisodeService = {
+  getEpisodeBySeid(seid) {
+    let episodes = episodeData.filter((x) => x.seid === seid)
+    if (episodes.length !== 1) {
+      throw 'More than one episode had that SEID'
+    }
+    return episodes[0]
   },
 }
 
@@ -79,4 +90,9 @@ function getAllCharacterCounts() {
 function loadIndex(index) {
   var rawIndex = createIndex(index)
   loadedIndex = elasticlunr.Index.load(rawIndex)
+}
+
+async function loadEpisodes() {
+  const res = await fetch(episodeDataSource)
+  episodeData = await res.json()
 }
