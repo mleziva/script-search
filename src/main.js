@@ -50,7 +50,6 @@ const App = createApp({
   },
   mounted() {
     console.log('Application mounted.')
-    this.fetchposts()
   },
 })
 App.mount('main')

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "0",
+    "character": "DNE",
+    "images": ["dne.png"],
+    "altText": "Avatar of character"
+  },
+  {
+    "id": "1",
+    "character": "JERRY",
+    "images": ["jerry1.jpg"],
+    "altText": "Avatar of character"
+  },
+  {
+    "id": "2",
+    "character": "GEORGE",
+    "images": ["george1.jpg"],
+    "altText": "Avatar of character"
+  },
+  {
+    "id": "3",
+    "character": "ELAINE",
+    "images": ["elaine1.jpg"],
+    "altText": "Avatar of character"
+  },
+  {
+    "id": "4",
+    "character": "KRAMER",
+    "images": ["kramer1.jpg"],
+    "altText": "Avatar of character"
+  },
+  {
+    "id": "5",
+    "character": "KESSLER",
+    "images": ["kramer1.jpg"],
+    "altText": "Avatar of character"
+  }
+]
