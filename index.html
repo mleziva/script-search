@@ -51,7 +51,8 @@
 
         <app-search></app-search>
         <div class="flex w-5/6 mx-auto text-indigo-darkest md:w-3/4">
-          <div class="w-1/4 mr-4">
+          <!-- <span>message: {{ this.searchResults }}</span> -->
+          <div v-show="this.hasSearchResults" class="w-1/4 mr-4">
             <div class="bg-white p-4 border border-solid border-grey-light">
               <p class="text-lg border-b pb-2 mb-2">Filter by:</p>
               <sidebar-facet

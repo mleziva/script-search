@@ -4,6 +4,7 @@ import SidebarFacet from '/src/components/sidebar-facet.js'
 import Header from '/src/components/header/header.js'
 import Search from '/src/components/search.js'
 import SearchResults from '/src/components/search-results.js'
+import { searchResultsStore } from '/src/stores/searchResultsStore.js'
 import { createApp } from 'vue'
 
 await DataService.init()
@@ -47,9 +48,15 @@ const App = createApp({
         )
       })
     },
+    searchResults() {
+      return searchResultsStore.results
+    },
+    hasSearchResults() {
+      return this.searchResults.length > 0;
+    }
   },
   mounted() {
-    console.log('Application mounted.')
+    console.log('Application mounted. ')
   },
 })
 App.mount('main')

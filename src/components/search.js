@@ -18,13 +18,20 @@ export default {
   },
   methods: {
     debounceSearch(event) {
-      this.searchQuery = null
-      clearTimeout(this.debounce)
-      document.getElementById('loading').style.display = 'inline-block'
-      this.debounce = setTimeout(() => {
-        this.searchQuery = event.target.value
-        document.getElementById('loading').style.display = 'none'
-      }, 600)
+      var searchTerms = event.target.value;
+      //this.searchQuery = null
+      if(!searchTerms){
+        this.searchQuery = null;
+      }
+      else{
+        clearTimeout(this.debounce)
+        document.getElementById('loading').style.display = 'inline-block'
+        this.debounce = setTimeout(() => {
+          this.searchQuery = event.target.value
+          document.getElementById('loading').style.display = 'none'
+        }, 600)
+      }
+
     },
   },
   template: `
