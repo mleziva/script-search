@@ -4,9 +4,9 @@ export function createIndex(collection) {
   var index = elasticlunr(function () {
     this.addField('character')
     this.addField('dialogue')
-    this.addField('episodeNumber')
+    this.addField('sceneNumber')
     this.addField('seid')
-    this.addField('season')
+    this.addField('popularity')
     this.setRef('id')
   })
 
@@ -16,9 +16,9 @@ export function createIndex(collection) {
       id: item.id,
       character: item.character,
       dialogue: item.dialogue,
-      episodeNumber: item.episodeNumber,
+      sceneNumber: item.sceneNumber,
       seid: item.seid,
-      season: item.season,
+      popularity: item.popularity,
     })
   })
 

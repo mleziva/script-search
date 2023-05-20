@@ -25,6 +25,18 @@ export default {
     searchResultsStoreResults() {
       return searchResultsStore.results
     },
+    sortedResults() {
+      if (!searchResultsStore.results) {
+        return searchResultsStore.results
+      }
+      searchResultsStore.results.sort((a, b) => 
+      ((+b.score + +b.doc.popularity) - (+a.score + +a.doc.popularity))
+      );
+      searchResultsStore.results.forEach(a => console.log(a.score));
+      
+      searchResultsStore.results.forEach(a => console.log(+a.score + +a.doc.popularity));
+      return searchResultsStore.results
+    },
     resultsCount() {
       return this.searchResultsStoreResults.length
     },
@@ -35,7 +47,7 @@ export default {
       return this.indexStart + this.pageSize
     },
     paginatedResults() {
-      return Object.values(this.searchResultsStoreResults).slice(
+      return Object.values(this.sortedResults).slice(
         this.indexStart,
         this.indexEnd,
       )
@@ -54,8 +66,8 @@ export default {
     },
   },
   methods: {
-    getEpisodeTitle(seid) {
-      return episodeStore.getEpisodeBySeid(seid).title
+    getEpisodeDetails(seid) {
+      return episodeStore.getEpisodeBySeid(seid)
     },
     getCharacterImagePath(character) {
       return ImageService.getImagePathByCharacter(character).images[0]
@@ -78,9 +90,7 @@ export default {
     <span>{{indexStart}} - {{smallerOfIndexEndOrResultsCount}} of {{resultsCount}} results</span>
   </div>
   <ResultCard v-for="result in paginatedResults" :key="result.id" 
-  :season="result.doc.season" 
-  :episode="result.doc.episodeNumber" 
-  :episodeName="getEpisodeTitle(result.doc.seid)" 
+  :episodeDetails="getEpisodeDetails(result.doc.seid)" 
   :character="result.doc.character" 
   :characterImage="getCharacterImagePath(result.doc.character)"
   :characterImageAltText="getCharacterImageAltText(result.doc.character)"

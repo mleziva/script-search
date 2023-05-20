@@ -2,9 +2,7 @@ import { searchResultsStore } from '../stores/searchResultsStore.js'
 export default {
   name: 'Search',
   props: {
-    season: String,
-    episode: String,
-    episodeName: String,
+    episodeDetails: Object,
     character: String,
     characterImage: String,
     characterImageAltText: String,
@@ -43,8 +41,8 @@ export default {
         <p class="text-2xl">{{character}}</p>
       </div>
       <div class="ml-auto text-right">
-        <p class="text-sm">Season {{season >> 0}} Episode {{episode >> 0}}</p>
-        <p class="text-sm italic">{{episodeName}}</p>
+        <p class="text-sm">Season {{episodeDetails.season >> 0}} Episode {{episodeDetails.episodeNumber >> 0}}</p>
+        <p class="text-sm italic">{{episodeDetails.title}}</p>
       </div>
     </div>
     <div class="flex rounded-lg bg-slate-100 px-5 py-4">

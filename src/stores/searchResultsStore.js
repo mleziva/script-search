@@ -47,6 +47,7 @@ export const searchResultsStore = reactive({
   executeSearch(query) {
     this.filterApplied = false
     this.results = DataService.query(query)
+    console.log(this.results)
     this.query = query
   },
 })

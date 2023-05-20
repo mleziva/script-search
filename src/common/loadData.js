@@ -52,7 +52,9 @@ export const EpisodeService = {
     if (episodes.length !== 1) {
       throw 'More than one episode had that SEID'
     }
-    return episodes[0]
+    let episode = episodes[0];
+    episode.season = episode.seid.substring(1, 3);
+    return episode
   },
 }
 export const ImageService = {
