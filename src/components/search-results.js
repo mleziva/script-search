@@ -1,8 +1,7 @@
 import { searchResultsStore } from '../stores/searchResultsStore.js'
-import { episodeStore } from '../stores/episodeStore.js'
 import ResultCard from './result-card.js'
 import PageButtons from './page-buttons.js'
-import { ImageService } from '../common/loadData.js'
+import PageResultsCount from './page-results-count.js'
 
 export default {
   name: 'SearchResults',
@@ -13,7 +12,8 @@ export default {
   },
   components: {
     ResultCard,
-    PageButtons
+    PageButtons,
+    PageResultsCount
   },
   watch: {
     searchResultsStoreResults() {
@@ -30,16 +30,15 @@ export default {
       if (!searchResultsStore.results) {
         return searchResultsStore.results
       }
-      searchResultsStore.results.sort((a, b) => 
-      ((+b.score + +b.doc.popularity) - (+a.score + +a.doc.popularity))
+      searchResultsStore.results.sort((a, b) =>
+        ((+b.score + +b.doc.popularity) - (+a.score + +a.doc.popularity))
       );
       // searchResultsStore.results.forEach(a => console.log(a.score));
-      
+
       // searchResultsStore.results.forEach(a => console.log(+a.score + +a.doc.popularity));
       return searchResultsStore.results
     },
     resultsCount() {
-      console.log("test: " + this.searchResultsStoreResults.length)
       return this.searchResultsStoreResults.length
     },
     paginatedResults() {
@@ -47,25 +46,14 @@ export default {
         searchResultsStore.indexStart,
         searchResultsStore.indexEnd,
       )
-    },
-    indexStart(){
-      return searchResultsStore.indexStart
-    },
-    smallerOfIndexEndOrResultsCount() {
-      if (searchResultsStore.indexEnd < this.resultsCount) {
-        return searchResultsStore.indexEnd
-      }
-      return this.resultsCount
-    },
+    }
   },
   methods: {
 
   },
   template: `
 <div v-if="resultsCount > 0 ">
-  <div class="block">
-    <span>{{indexStart}} - {{smallerOfIndexEndOrResultsCount}} of {{resultsCount}} results</span>
-  </div>
+  <PageResultsCount/>
   <ResultCard v-for="result in paginatedResults" :key="result.id" 
   :seid="result.doc.seid" 
   :character="result.doc.character" 
