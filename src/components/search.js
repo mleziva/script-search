@@ -21,7 +21,8 @@ export default {
       var searchTerms = event.target.value;
       //this.searchQuery = null
       if(!searchTerms){
-        this.searchQuery = null;
+        this.searchQuery = null
+        searchResultsStore.allByPopularity()
       }
       else{
         clearTimeout(this.debounce)

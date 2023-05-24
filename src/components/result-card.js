@@ -1,16 +1,15 @@
 import { searchResultsStore } from '../stores/searchResultsStore.js'
+import { episodeStore } from '../stores/episodeStore.js'
+import { ImageService } from '../common/loadData.js'
 export default {
   name: 'Search',
   props: {
-    episodeDetails: Object,
+    seid: String,
     character: String,
-    characterImage: String,
-    characterImageAltText: String,
     dialogue: String,
   },
   data() {
     return {
-      searchQuery: null,
     }
   },
   computed: {
@@ -18,19 +17,20 @@ export default {
       return searchResultsStore.results
     },
     imageSource() {
-      return '/src/img/' + this.characterImage
+      return '/src/img/' + this.characterImagePath
     },
+    episodeDetails() {
+      return episodeStore.getEpisodeBySeid(this.seid)
+    },
+    characterImagePath() {
+      return ImageService.getImagePathByCharacter(this.character).images[0]
+    },
+    characterImageAltText() {
+      return ImageService.getImagePathByCharacter(this.character).altText
+    }
   },
   methods: {
-    debounceSearch(event) {
-      this.searchQuery = null
-      clearTimeout(this.debounce)
-      document.getElementById('loading').style.display = 'inline-block'
-      this.debounce = setTimeout(() => {
-        this.searchQuery = event.target.value
-        document.getElementById('loading').style.display = 'none'
-      }, 500)
-    },
+
   },
   template: `
 <div class="w-full max-w-sm lg:flex lg:max-w-full">

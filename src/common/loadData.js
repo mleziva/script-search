@@ -33,6 +33,13 @@ const DataService = {
     })
     return results
   },
+  allSortedByPopularity() {
+    let sortedList = data.sort((a, b) =>
+      (b.popularity - a.popularity)
+    );
+    console.log(sortedList)
+    return sortedList
+  }
 }
 
 export default DataService
@@ -75,7 +82,7 @@ function getAllCharacterCounts() {
   var items = data
   var characterResult = []
 
-  for (var item, i = 0; (item = items[i++]); ) {
+  for (var item, i = 0; (item = items[i++]);) {
     var character = item.character
     //don't include actions
     if (character.includes('(')) {
@@ -106,6 +113,8 @@ function getAllCharacterCounts() {
 function loadIndex(index) {
   var rawIndex = createIndex(index)
   loadedIndex = elasticlunr.Index.load(rawIndex)
+  console.log("loaded index")
+  console.log(loadedIndex)
 }
 
 async function loadEpisodes() {

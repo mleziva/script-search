@@ -3,6 +3,14 @@ import DataService from '../common/loadData.js'
 
 export const searchResultsStore = reactive({
   results: {},
+  currentPage: 1,
+  pageSize: 5,
+  get indexStart() {
+      return (this.currentPage - 1) * this.pageSize
+  },
+  get indexEnd() {
+      return this.indexStart + this.pageSize
+  },
   query: null,
   filterApplied: false,
   filterResults(propertyName, filterValue) {
@@ -50,4 +58,7 @@ export const searchResultsStore = reactive({
     console.log(this.results)
     this.query = query
   },
+  allByPopularity(){
+    this.results = DataService.allSortedByPopularity()
+  }
 })
