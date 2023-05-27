@@ -21,7 +21,7 @@ export default {
   setup() {
     const imageLink = 'https://i.redd.it/cayhgllq3ui21.jpg'
     const altText = 'seinfeldCast'
-    const titleText = 'Find your favorite seinfeld quotes'
+    const titleText = 'Find your favorite Seinfeld quotes'
     return {
       imageLink,
       altText,

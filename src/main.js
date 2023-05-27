@@ -1,4 +1,4 @@
-import DataService, { FacetService } from '/src/common/loadData.js'
+import DataService from '/src/common/loadData.js'
 
 import SidebarFacet from '/src/components/sidebar-facet.js'
 import Header from '/src/components/header/header.js'
@@ -10,6 +10,9 @@ import { createApp } from 'vue'
 await DataService.init()
 
 const App = createApp({
+  async beforeCreate() {
+    console.log('Application create. ')
+  },
   data() {
     return {
       endpoint: 'https://jsonplaceholder.typicode.com/posts',
@@ -18,13 +21,14 @@ const App = createApp({
       facet: [],
       checkedProducts: [],
       itemtest: ['test', 'adsf'],
-      characters: FacetService.loadCharacters(),
+      // characters: FacetService.loadCharacters(),
     }
   },
   components: {
     'sidebar-facet': SidebarFacet,
     'app-header': Header,
     'app-search': Search,
+    'app-search-results': SearchResults,
     'app-search-results': SearchResults,
   },
   methods: {

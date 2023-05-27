@@ -26,7 +26,7 @@ export default {
 
     },
     template: `
-  <div class="block">
+  <div>
     <span>{{indexStart}} - {{smallerOfIndexEndOrResultsCount}} of {{resultsCount}} results</span>
   </div>
     `,

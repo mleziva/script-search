@@ -22,6 +22,7 @@ export default {
       //this.searchQuery = null
       if(!searchTerms){
         this.searchQuery = null
+        console.log("er")
         searchResultsStore.allByPopularity()
       }
       else{
@@ -36,19 +37,22 @@ export default {
     },
   },
   template: `
-  <div class="w-3/4 mx-auto my-6">
-        <input
-        type="search"
-        @input="debounceSearch"
-        name=""
-        id=""
-        class="rounded p-2 w-full bg-grey-light border-grey-light focus:bg-white border border-solid focus:border-indigo-light text-blue-darkest block"
-        placeholder="Enter a search here!"
-        />
-    <div class="block" >
-        <span v-if="searchQuery && searchResults.length > 0 ">{{searchResults.length}} results</span>
-        <span v-else> Try searching for something like "These Pretzels are making me thirsty" </span>
+  <div class="flex">
+    <div class="w-full mx-auto">
+      <input
+      type="search"
+      @input="debounceSearch"
+      name=""
+      id=""
+      class="rounded p-2 w-full bg-grey-light border-grey-light focus:bg-white border border-solid focus:border-indigo-light text-blue-darkest block"
+      placeholder="Enter a search here!"
+      />
+      <div>
+          <span v-if="searchQuery && searchResults.length > 0 ">{{searchResults.length}} results</span>
+          <span v-else-if="searchQuery">No results for {{searchQuery}} </span>
+          <span v-else> Try searching for something like "These Pretzels are making me thirsty" </span>
+      </div>
     </div>
-</div>
+  </div>
     `,
 }

@@ -59,6 +59,8 @@ export const searchResultsStore = reactive({
     this.query = query
   },
   allByPopularity(){
-    this.results = DataService.allSortedByPopularity()
+    this.results = DataService.allPopular
+    console.log("Results: " )
+    console.log(this.results)
   }
 })

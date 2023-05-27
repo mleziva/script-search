@@ -1,3 +1,4 @@
+import search from '../components/search.js'
 import { createIndex } from './lunrIndex.js'
 
 const elasticlunr = window.elasticlunr
@@ -10,12 +11,14 @@ let data, loadedIndex, episodeData, imageData
 let facets = {}
 
 const DataService = {
+  allPopular: {},
   async init() {
     const res = await fetch(dataSource)
     data = await res.json()
     loadIndex(data)
-    loadEpisodes()
-    loadImages()
+    await loadEpisodes()
+    await loadImages()
+    allSortedByPopularity()
     return data
   },
 
@@ -27,18 +30,14 @@ const DataService = {
   },
 
   query(searchQuery) {
+    if(!searchQuery){
+      return this.allPopular
+    }
     let results = loadedIndex.search(searchQuery, {
       bool: 'OR',
       expand: true,
     })
     return results
-  },
-  allSortedByPopularity() {
-    let sortedList = data.sort((a, b) =>
-      (b.popularity - a.popularity)
-    );
-    console.log(sortedList)
-    return sortedList
   }
 }
 
@@ -75,6 +74,29 @@ export const ImageService = {
     }
     return images[0]
   },
+}
+
+function allSortedByPopularity() {
+  let sortedList = data.filter(x => x.popularity > 0.1)
+  sortedList = sortedList.sort((a, b) =>
+    (b.popularity - a.popularity)
+  );
+  sortedList = sortedList.map(x => {
+    let doc = {
+      id : x.id,
+      character : x.character,
+      dialogue : x.dialogue,
+      sceneNumber : x.sceneNumber,
+      seid : x.seid,
+      popularity : x.popularity,
+    }
+    let item ={
+      doc: doc
+    }
+  return item
+  })
+  DataService.allPopular = sortedList
+  return sortedList
 }
 
 function getAllCharacterCounts() {

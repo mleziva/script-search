@@ -1,19 +1,26 @@
 import { searchResultsStore } from '../stores/searchResultsStore.js'
+import { FacetService } from '/src/common/loadData.js'
 import ResultCard from './result-card.js'
 import PageButtons from './page-buttons.js'
 import PageResultsCount from './page-results-count.js'
-
+import SidebarFacet from './sidebar-facet.js'
 export default {
   name: 'SearchResults',
   props: {},
   data() {
     return {
+      characters: FacetService.loadCharacters(),
     }
+  },
+  mounted() {
+    console.log(`the results component is now mounted.`)
+    searchResultsStore.allByPopularity()
   },
   components: {
     ResultCard,
     PageButtons,
-    PageResultsCount
+    PageResultsCount,
+    SidebarFacet
   },
   watch: {
     searchResultsStoreResults() {
@@ -53,7 +60,24 @@ export default {
   },
   template: `
 <div v-if="resultsCount > 0 ">
+  
+  <div class="flex">
+  <div class="w-full">
   <PageResultsCount/>
+  </div>
+  </div>
+  <div class="flex mx-auto text-indigo-darkest md:w-3/4">
+    <div  class="w-1/4 mr-4">
+      <div class="bg-white p-4 border border-solid border-grey-light">
+        <p class="text-lg border-b pb-2 mb-2">Filter by:</p>
+        <SidebarFacet
+          :items="characters"
+          category="Character"
+        ></SidebarFacet>
+      </div>
+    </div>
+    <div class="w-3/4">
+  
   <ResultCard v-for="result in paginatedResults" :key="result.id" 
   :seid="result.doc.seid" 
   :character="result.doc.character" 
@@ -61,6 +85,8 @@ export default {
   ></ResultCard>
 
   <PageButtons></PageButtons>
+  </div>
+  </div>
 </div>
 
     `,

@@ -8,6 +8,10 @@ export default {
       results: searchResultsStore.results,
     }
   },
+  created() {
+    console.log(`the facets is now mounted.`)
+    this.facetItems = searchResultsStore.getFacets(this.categoryProperty)
+  },
   props: {
     items: {
       type: Object,
