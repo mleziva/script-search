@@ -26,8 +26,11 @@ export default {
 
     },
     template: `
-  <div>
-    <span>{{indexStart}} - {{smallerOfIndexEndOrResultsCount}} of {{resultsCount}} results</span>
-  </div>
+    <div class="text-left">
+        <span>{{indexStart}} - {{smallerOfIndexEndOrResultsCount}} of {{resultsCount}} results</span>
+    </div>
+    <div class="text-right">
+        <span>{{indexStart}} - {{smallerOfIndexEndOrResultsCount}} of {{resultsCount}} results</span>
+    </div>
     `,
 }

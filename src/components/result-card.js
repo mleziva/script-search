@@ -33,7 +33,7 @@ export default {
 
   },
   template: `
-<div class="w-full max-w-sm lg:flex lg:max-w-full">
+<div class="w-full">
   <div class="mb-8 flex min-w-full flex-col justify-between rounded-lg border border-gray-400 bg-slate-700 p-4 leading-normal text-white">
     <div class="flex pb-2">
       <div class="flex items-center justify-center">

@@ -60,14 +60,13 @@ export default {
   },
   template: `
 <div v-if="resultsCount > 0 ">
-  
   <div class="flex">
-  <div class="w-full">
-  <PageResultsCount/>
+    <div class="w-full">
+      <PageResultsCount/>
+    </div>
   </div>
-  </div>
-  <div class="flex mx-auto text-indigo-darkest md:w-3/4">
-    <div  class="w-1/4 mr-4">
+  <div class="flex mx-auto text-indigo-darkest">
+    <div class="sm:w-1/4 mr-4">
       <div class="bg-white p-4 border border-solid border-grey-light">
         <p class="text-lg border-b pb-2 mb-2">Filter by:</p>
         <SidebarFacet
@@ -77,15 +76,14 @@ export default {
       </div>
     </div>
     <div class="w-3/4">
-  
-  <ResultCard v-for="result in paginatedResults" :key="result.id" 
-  :seid="result.doc.seid" 
-  :character="result.doc.character" 
-  :dialogue="result.doc.dialogue"
-  ></ResultCard>
+      <ResultCard v-for="result in paginatedResults" :key="result.id" 
+      :seid="result.doc.seid" 
+      :character="result.doc.character" 
+      :dialogue="result.doc.dialogue"
+      ></ResultCard>
 
-  <PageButtons></PageButtons>
-  </div>
+      <PageButtons></PageButtons>
+    </div>
   </div>
 </div>
 
