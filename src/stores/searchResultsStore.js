@@ -13,6 +13,7 @@ export const searchResultsStore = reactive({
   },
   query: null,
   filterApplied: false,
+  //todo, this needs to keep track of the filters
   filterResults(propertyName, filterValue) {
     this.results = Object.values(this.results).filter(
       (key) => key.doc[propertyName] === filterValue,
@@ -46,6 +47,7 @@ export const searchResultsStore = reactive({
     console.log(facetResults)
     return facetResults
   },
+  //todo this needs to only remove the filter that was unchecked
   removeFilter() {
     if (this.filterApplied) {
       this.filterApplied = false

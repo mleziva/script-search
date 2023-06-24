@@ -88,6 +88,7 @@ function allSortedByPopularity() {
       dialogue : x.dialogue,
       sceneNumber : x.sceneNumber,
       seid : x.seid,
+      season : x.seid.substr(1, 2),
       popularity : x.popularity,
     }
     let item ={

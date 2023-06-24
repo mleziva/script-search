@@ -67,11 +67,15 @@ export default {
   </div>
   <div class="flex mx-auto text-indigo-darkest">
     <div class="sm:w-1/4 mr-4">
-      <div class="bg-white p-4 border border-solid border-grey-light">
+      <div class="bg-white p-1 md:p-4 border border-solid border-grey-light">
         <p class="text-lg border-b pb-2 mb-2">Filter by:</p>
         <SidebarFacet
-          :items="characters"
           category="Character"
+        ></SidebarFacet>
+        <SidebarFacet
+          category="season"
+          facetName="Season"
+          prefix="Season"
         ></SidebarFacet>
       </div>
     </div>

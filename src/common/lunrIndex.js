@@ -6,6 +6,7 @@ export function createIndex(collection) {
     this.addField('dialogue')
     this.addField('sceneNumber')
     this.addField('seid')
+    this.addField('season')
     this.addField('popularity')
     this.setRef('id')
   })
@@ -18,6 +19,7 @@ export function createIndex(collection) {
       dialogue: item.dialogue,
       sceneNumber: item.sceneNumber,
       seid: item.seid,
+      season: item.seid.substr(1, 2), //gets the season number from seid for facet
       popularity: item.popularity,
     })
   })

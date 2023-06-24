@@ -13,12 +13,15 @@ export default {
     this.facetItems = searchResultsStore.getFacets(this.categoryProperty)
   },
   props: {
-    items: {
-      type: Object,
-    },
     category: {
       type: String,
     },
+    facetName: {
+      type: String
+    },
+    prefix: {
+      type: String
+    }
   },
   watch: {
     facet() {
@@ -41,6 +44,11 @@ export default {
       this.facet = []
     },
   },
+  methods: {
+    startsWithChar(whichChar) {
+      return this.names.filter(n => n.startsWith(whichChar))
+    }
+  },
   computed: {
     categoryProperty() {
       return this.category.toLowerCase()
@@ -57,7 +65,7 @@ export default {
   },
   template: `
     <dl class="list-reset">
-      <dt class="font-bold text-purple-dark pb-2 uppercase" >{{category}}</dt>
+      <dt class="font-bold text-purple-dark pb-2 uppercase" >{{facetName ?? category}}</dt>
         <dd class="mb-2" v-for="facetItem in facetItems" >
           <input
             :id="facetItem[categoryProperty]"
@@ -66,7 +74,7 @@ export default {
             v-model="facet"
             :value="facetItem[categoryProperty]"
           />
-          <label class="pl-2">{{facetItem[categoryProperty]}}: {{ facetItem.count }}</label>
+          <label class="pl-2"> {{prefix}} {{facetItem[categoryProperty]}}: {{ facetItem.count }}</label>
         </dd>
       </dl>
     `,
