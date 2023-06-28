@@ -32,7 +32,7 @@ export default {
           this.facet[0],
         )
       } else {
-        searchResultsStore.removeFilter()
+        searchResultsStore.removeFilter(this.category)
       }
     },
     searchResultsStoreResults() {

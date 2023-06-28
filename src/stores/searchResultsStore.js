@@ -6,19 +6,18 @@ export const searchResultsStore = reactive({
   currentPage: 1,
   pageSize: 5,
   get indexStart() {
-      return (this.currentPage - 1) * this.pageSize
+    return (this.currentPage - 1) * this.pageSize
   },
   get indexEnd() {
-      return this.indexStart + this.pageSize
+    return this.indexStart + this.pageSize
   },
   query: null,
-  filterApplied: false,
-  //todo, this needs to keep track of the filters
+  filter: {},
   filterResults(propertyName, filterValue) {
     this.results = Object.values(this.results).filter(
       (key) => key.doc[propertyName] === filterValue,
     )
-    this.filterApplied = true
+    this.filter[propertyName] = filterValue
   },
   getFacets(propertyName) {
     //get number of each occurrence of property and return as list of objects
@@ -48,21 +47,34 @@ export const searchResultsStore = reactive({
     return facetResults
   },
   //todo this needs to only remove the filter that was unchecked
-  removeFilter() {
-    if (this.filterApplied) {
-      this.filterApplied = false
+  removeFilter(propertyName) {
+    propertyName = propertyName.toLowerCase();
+    if (this.filter[propertyName]) {
+      delete this.filter[propertyName];
+      //need to repeat search and reapply any existing filters
       this.results = DataService.query(this.query)
+      this.reapplyFilters();
     }
   },
+  reapplyFilters() {
+    Object.keys(this.filter).forEach(propertyName => {
+      console.log(propertyName, this.filter[propertyName]);
+      let filterValue = this.filter[propertyName];
+      this.results = Object.values(this.results).filter(
+        (key) => key.doc[propertyName] === filterValue,
+      )
+    });
+
+  },
   executeSearch(query) {
-    this.filterApplied = false
+    this.filter = {};
     this.results = DataService.query(query)
     console.log(this.results)
     this.query = query
   },
-  allByPopularity(){
+  allByPopularity() {
     this.results = DataService.allPopular
-    console.log("Results: " )
+    console.log("Results: ")
     console.log(this.results)
   }
 })
